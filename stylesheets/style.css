@@ -44,6 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main {
@@ -133,4 +134,48 @@ button {
   display: inline;
   padding: 1rem;
 }
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para tablets em modo retrato */
+  .main {
+    flex-direction: column;
+  }
+
+  .input-text, .target {
+    width: 100%;
+  }
+
+  .input-text {
+    height: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .target {
+    padding: 3rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons button {
+    width: 45%;
+  }
+
+  .target-title {
+    padding: 0 0 1rem 0;
+  }
+
+  .target-img {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos para tablets em modo paisagem */
+}
+
 
