@@ -174,8 +174,51 @@ button {
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* Estilos para tablets em modo paisagem */
-}
+/* Smartphones (Retrato) */
+@media screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
 
+  .input-text, .target {
+    width: 100%;
+  }
+
+  .input-text {
+    height: 100%;
+    padding-bottom: 1.7rem;
+  }
+
+  .alert {
+    font-size: .8rem;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin: .3rem 0;
+  }
+
+  .target {
+    padding: 1.7rem;
+  }
+
+  .target-title {
+    padding: 0 0 1rem 0;
+  }
+
+  .target-img {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 
