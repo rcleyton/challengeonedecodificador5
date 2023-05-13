@@ -222,3 +222,15 @@ button {
   }
 }
 
+.copy-button {
+  border-radius: 50%;
+  background-color: #073b4c;
+  border-color: #073b4c;
+  display: block;
+  text-align: right;
+}
+
+.copy-button i {
+  font-size: 1.5rem;
+  color: #fff;
+}
