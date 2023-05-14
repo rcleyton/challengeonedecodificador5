@@ -41,16 +41,21 @@ function decrypt(textEncrypt) {
 }
 
 function toggleMode() {
-  var body = document.body;
-  var button = document.getElementById("modeButton");
+  let body = document.body
+  let button = document.getElementById("modeButton")
+  let aside = document.querySelector("aside")
+  let btn = document.querySelector("button")
+
 
   if (body.classList.contains("dark-mode")) {
-      body.classList.remove("dark-mode");
-      button.classList.remove("dark-mode");
-      button.textContent = "DARK MODE";
+      body.classList.remove("dark-mode")
+      button.textContent = "DARK MODE"
+      aside.classList.remove("dark-mode")
+      btn.classList.remove("dark-mode")
   } else {
-      body.classList.add("dark-mode");
-      button.classList.add("dark-mode")
-      button.textContent = "LIGHT MODE";
+      body.classList.add("dark-mode")
+      button.textContent = "LIGHT MODE"
+      aside.classList.add("dark-mode")
+      btn.classList.add("dark-mode")
   }
 }
