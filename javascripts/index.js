@@ -39,3 +39,18 @@ function decrypt(textEncrypt) {
   textEncrypt = textEncrypt.replace(/enter/g, "e")
   return textEncrypt
 }
+
+function toggleMode() {
+  var body = document.body;
+  var button = document.getElementById("modeButton");
+
+  if (body.classList.contains("dark-mode")) {
+      body.classList.remove("dark-mode");
+      button.classList.remove("dark-mode");
+      button.textContent = "DARK MODE";
+  } else {
+      body.classList.add("dark-mode");
+      button.classList.add("dark-mode")
+      button.textContent = "LIGHT MODE";
+  }
+}

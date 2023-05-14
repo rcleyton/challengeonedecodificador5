@@ -21,7 +21,7 @@
       <div class="logo">
         <img src="./images/finger.svg" alt="Logo" width="50">
       </div>
-      <button class="dark-mode">Dark Mode</button>
+      <button id="modeButton" class="mode" onclick="toggleMode()">Dark Mode</button>
     </header>
 
     <main class="main">
@@ -31,11 +31,11 @@
           <span class="alert">Apenas letras minúsculas e sem acentos</span>
           <div class="buttons">
             <button id="encrypt" class="code">Criptografar</button>
-            <button id="decrypt" class="decode">Descriptografar</button>
+            <button id="decrypt" class="decode mode">Descriptografar</button>
           </div>
         </div>
       </section>
-      <aside class="target">
+      <aside class="target mode">
         <p id="showMessage"></p>
         <img class="target-img" src="./images/security-svgrepo-com.svg" alt="Segurança" width="150" />
         <h3 class="target-title">Nenhuma mensagem encontrada</h3>
