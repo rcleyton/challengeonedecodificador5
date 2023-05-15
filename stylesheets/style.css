@@ -103,8 +103,21 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 3rem ;
+  padding: 1rem;
   background-color: #fff;
+}
+
+.show-message-container {
+  display: none;
+}
+
+.show-message-container.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .target-title {
@@ -228,6 +241,9 @@ button {
   border-color: #073b4c;
   display: block;
   text-align: right;
+  position: absolute;
+  bottom: 0px; /* Ajuste a distância vertical conforme necessário */
+  right: 0px; /* Ajuste a distância horizontal conforme necessário */
 }
 
 .copy-button i {
